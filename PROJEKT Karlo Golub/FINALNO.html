@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Projekt Karlo Golub</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: red;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fade-in 1s ease-in-out;
+    }
+    
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    nav {
+      background-color: red;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    
+    section {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    clanak {
+      margin-bottom: 20px;
+      animation: slide-up 1s ease-in-out;
+    }
+    
+    naslov {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    sazetak {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    
+    automobil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      animation: scale-in 1s ease-in-out;
+    }
+    
+    automobil img {
+      width: 700px;
+      height: 350px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    automobil ime,
+    automobil godina_proizvodnje,
+    automobil kilometraza,
+    automobil lokacija,
+    automobil cijena {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    footer {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fade-in 1s ease-in-out;
+    }
+    
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slide-up {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes scale-in {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logotip">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#pocetna">Početna</a></li>
+        <li><a href="#ponuda">Ponuda</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="pocetna">
+    <h1>Početna</h1>
+    <automobil>
+      <img src="teesla.png" alt="Tesla">
+      <ime>Najnoviji model električnog automobila obećava revoluciju na tržištu</ime>
+      <godina_proizvodnje>Upoznajte najnoviji model električnog automobila koji dolazi s impresivnim rasponom vožnje, brzim punjenjem i naprednim tehnološkim značajkama.</godina_proizvodnje>
+      <kilometraza>...</kilometraza>
+    </automobil>
+    <automobil>
+      <img src="autonomno.jpeg" >
+      <ime>Inovativna tehnologija autonomne vožnje predstavlja nove mogućnosti</ime>
+      <godina_proizvodnje>Otkrijte najnovija dostignuća u području autonomne vožnje i kako ta tehnologija mijenja način vožnje.</godina_proizvodnje>
+      <kilometraza>...</kilometraza>
+    </automobil>
+    <automobil>
+      <img src="elekmoto.jpg">
+      <ime>Trendovi u električnim motociklima: brzina i održivost u jednom</ime>
+      <godina_proizvodnje>Upoznajte najnovije trendove u električnim motociklima koji kombiniraju visoku brzinu i održivost.</godina_proizvodnje>
+      <kilometraza>...</kilometraza>
+    </automobil>
+  </section>
+  <section id="ponuda">
+    <h1>Ponuda</h1>
+    <automobil>
+      <img src="a4.jpg" alt="Audi A4">
+      <ime>Audi A4</ime>
+      <godina_proizvodnje>2018</godina_proizvodnje>
+      <kilometraza>60,000</kilometraza>
+      <lokacija>Zagreb, Hrvatska</lokacija>
+      <cijena>25,000</cijena>
+    </automobil>
+    <automobil>
+    <img src="bm3.jpg" alt="Logotip" width="700" height="350">
+    <ime>BMW 3 Series</ime>
+    <godina_proizvodnje>2017</godina_proizvodnje>
+    <kilometraza>80,000</kilometraza>
+    <lokacija>München, Njemačka</lokacija>
+    <cijena>22,500</cijena>
+    </automobil>
+    <automobil>
+    <img src="mercedes-benz-c-klasa-63-amg-2017-slika-129818142.jpg" alt="Logotip" width="700" height="350">
+    <ime>Mercedes-Benz C-Class</ime>
+    <godina_proizvodnje>2019</godina_proizvodnje>
+    <kilometraza>40,000</kilometraza>
+    <lokacija>Stuttgart, Njemačka</lokacija>
+    <cijena>30,000</cijena>
+    </automobil>
+    <automobil>
+    <img src="2016-toyota-camry-review-car-and-driver-photo-669270-s-original.jpg" alt="Logotip" width="700" height="350">
+    <ime>Toyota Camry</ime>
+    <godina_proizvodnje>2016</godina_proizvodnje>
+    <kilometraza>70,000</kilometraza>
+    <lokacija>Tokyo, Japan</lokacija>
+    <cijena>18,000</cijena>
+    </automobil>
+    <automobil>
+    <img src="download.jpg" alt="Logotip" width="700" height="350">
+    <ime>Volkswagen Golf</ime>
+    <godina_proizvodnje>2015</godina_proizvodnje>
+    <kilometraza>50,000</kilometraza>
+    <lokacija>Berlin, Njemačka</lokacija>
+    <cijena>15,500</cijena>
+    </automobil>
+  </section>
+  <section id="kontakt">
+    <h1>Kontakt</h1>
+    <p>Ime: Karlo Golub</p>
+    <p>Telefon: +385 91 981 0646</p>
+  </section>
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      var zagreb = {lat: 45.815011, lng: 15.981919}; // Koordinate za Zagreb
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: zagreb
+      });
+
+      var marker = new google.maps.Marker({
+        position: zagreb,
+        map: map,
+        title: 'Zagreb'
+      });
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/&callback=initMap" async defer></script>
+  <footer>
+    <p>Ime: Karlo Golub</p>
+    <p>Godina: 2023</p>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetSection = document.querySelector(link.getAttribute('href'));
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
